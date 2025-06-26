@@ -1,0 +1,162 @@
+# Created at 2025-04-26T16:20:24.217
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2025-04-26T16:20:25.146
+Unexpected IOException with stream: S
+
+
+# Created at 2025-04-26T16:20:36.109
+Unexpected IOException with stream:   And Searching required items                                                                                                                  # StepDefinitions.MyStepDefs.searching_required_items(io.cucumber.datatable.DataTable)
+    | productname     | size    | color   |
+    | Radiant Tee     | S       | Blue    |
+    | Fusion Backpack | [empty] | [empty] |
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #maincontent > div.page.messages > div:nth-child(2) > div > div > div (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at StepDefinitions.MyStepDefs.searching_required_items(MyStepDefs.java:119)
+	at âœ½.Searching required items(file:///C:/Users/prani/Downloads/seleniumjava/seleniumjava/src/test/resources/features/FeatureOne.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#maincontent > div.page.messages > div:nth-child(2) > div > div > div"}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7fb53722c57f694ce8cf5b57035dd3fd, findElement {value=#maincontent > div.page.messages > div:nth-child(2) > div > div > div, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.17 (5da517cf2c0d..., userDataDir: C:\Users\prani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63551/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fb53722c57f694ce8cf5b57035dd3fd
+	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at StepDefinitions.MyStepDefs.searching_required_items(MyStepDefs.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(Fo
+
+# Created at 2025-04-26T16:20:36.114
+Unexpected IOException with stream: rkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+
+
+# Created at 2025-04-26T16:20:36.121
+Unexpected IOException with stream:   And Adding Items in cart                                                                                                                      # StepDefinitions.MyStepDefs.adding_items_in_cart()
+
+
+# Created at 2025-04-26T16:20:36.123
+Unexpected IOException with stream:   And Validating Cart and Procced to checkout                                                                                                   # StepDefinitions.MyStepDefs.validating_cart_and_procced_to_checkout()
+
+
+# Created at 2025-04-26T16:20:36.125
+Unexpected IOException with stream:   And Adding shipping Address if not present with details firstroad firstcity Assam 12345 India 1234567899 Best way, if present procced to next # StepDefinitions.MyStepDefs.adding_shipping_address_if_not_present(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+
+
+# Created at 2025-04-26T16:20:36.128
+Unexpected IOException with stream:   And CheckOut                                                                                                                                  # StepDefinitions.MyStepDefs.check_out()
+
+
+# Created at 2025-04-26T16:20:36.141
+Unexpected IOException: 7,1,Luma ecommerce Automation,User will logged in and do shopping #1(Luma ecommerce Automation),null,Expected condition failed: waiting for presence of element located by: By.cssSelector: #maincontent > div.page.messages > div:nth-child(2) > div > div > div (tried for 10 second(s) with 500 milliseconds interval),null,Expected condition failed: waiting for presence of element located by: By.cssSelector: #maincontent > div.page.messages > div:nth-child(2) > div > div > div (tried for 10 second(s) with 500 milliseconds interval),Expected condition failed: waiting for presence of element located by: By.cssSelector: #maincontent > div.page.messages > div:nth-child(2) > div > div > div (tried for 10 second(s) with 500 milliseconds interval),org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #maincontent > div.page.messages > div:nth-child(2) > div > div > div (tried for 10 second(s) with 500 milliseconds interval)\000ACaused by: org.openqa.selenium.NoSuchElementException: \000Ano such element: Unable to locate element: {"method":"css selector"\002C"selector":"#maincontent > div.page.messages > div:nth-child(2) > div > div > div"}\000A  (Session info: chrome=135.0.7049.115)\000AFor documentation on this error\002C please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\000ABuild info: version: '4.19.1'\002C revision: 'abe0ee07dc'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.8'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [7fb53722c57f694ce8cf5b57035dd3fd\002C findElement {value=#maincontent > div.page.messages > div:nth-child(2) > div > div > div\002C using=css selector}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 135.0.7049.115\002C chrome: {chromedriverVersion: 135.0.7049.17 (5da517cf2c0d...\002C userDataDir: C:\005CUsers\005Cprani\005CAppData\005CLoca...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:63551}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:63551/devtoo...\002C se:cdpVersion: 135.0.7049.115\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 7fb53722c57f694ce8cf5b57035dd3fd\000A
+
+
+# Created at 2025-04-26T16:20:36.143
+Unexpected IOException: 5,1,Luma ecommerce Automation,User will logged in and do shopping #2(Luma ecommerce Automation),null,null,null
+
+
+# Created at 2025-04-26T16:20:36.160
+Unexpected IOException with stream: 
+Scenario Outline: User will logged in and do shopping                                                                                               # src/test/resources/features/FeatureOne.feature:19
+
+
+# Created at 2025-04-26T16:20:37.225
+Unexpected IOException with stream: Apr 26, 2025 4:20:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+
+
+# Created at 2025-04-26T16:20:37.225
+Unexpected IOException with stream: Apr 26, 2025 4:20:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2025-04-26T16:20:37.229
+Unexpected IOException with stream: Hi test02, Welcome to Luma
+
+
+# Created at 2025-04-26T16:20:41.304
+Unexpected IOException with stream:   Given user test02 will start shopping                                                                                                             # StepDefinitions.MyStepDefs.user_will_start_shopping(java.lang.String)
+
+
+# Created at 2025-04-26T16:20:47.170
+Unexpected IOException with stream:   When test02 creating account with details testname2 testemail02401@email.com Test02@123 Test02@123                                                # StepDefinitions.MyStepDefs.creating_account_with_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+
+
+# Created at 2025-04-26T16:21:16.528
+Unexpected IOException with stream:   Then handlinng registration or redirect to login testemail02401@email.com Test02@123                                                              # StepDefinitions.MyStepDefs.handlinng_registration_or_redirect_to_login(java.lang.String,java.lang.String)
+
+
